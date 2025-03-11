@@ -232,9 +232,25 @@ div > p {
 
 ### ผลการทดลอง
 ```html
-[วางโค้ดที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="menu-item">หน้าแรก</a></li>
+            <li><a href="#" class="menu-item" id="active">สินค้า</a></li>
+            <li><a href="#" class="menu-item">เกี่ยวกับเรา</a></li>
+            <li><a href="#" class="menu-item">ติดต่อ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
 ```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/8bdd0c14-ed89-44dc-87be-1639d8e9ef3e)
+
 
 
 [](#การทดลองที่-3-การจัดการสีและพื้นหลัง)
@@ -338,9 +354,124 @@ background-size: cover;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ดที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แสดงข้อมูลสินค้า</title>
+    <style>
+        .product-card {
+            width: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background-color: white;
+            margin: 15px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-title {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            color: #007bff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .product-description {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .product-button {
+            display: block;
+            background: linear-gradient(to right, #007bff, #0056b3);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            margin-top: 15px;
+            border-radius: 4px;
+        }
+
+        .product-button:hover {
+            background: linear-gradient(to right, #0056b3, #003980);
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/oEFIg8n6b7DesgAfe4DQXiEJsAPAXaAkPJbcYJ_tplv-tej9nj120t-origin.webp');"></div>
+            <div class="product-info">
+                <h2 class="product-title">ชินจังน่ารัก</h2>
+                <p class="product-price">฿1,999</p>
+                <p class="product-description">คิมิโนะโต๊ะ</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/og5fD2Bf4PhCLQRXAYZYrgkwegYAvbAGefAAfJ_tplv-tej9nj120t-origin.webp');"></div>
+            <div class="product-info">
+                <h2 class="product-title">ชินจังแลบลิ้น</h2>
+                <p class="product-price">฿2,499</p>
+                <p class="product-description">แบร่ๆ รักหลอกจึงหยอกเล่น</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/ogeMf5SsAPkEextFLAAMn2FRI2dee8MHvxQALA_tplv-tej9nj120t-origin.webp');"></div>
+            <div class="product-info">
+                <h2 class="product-title">ชินจังหมวกน้ำเงิน</h2>
+                <p class="product-price">฿1,299</p>
+                <p class="product-description">หมวกนี้เพื่อเธอ</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/osMCIQ8XA8QiIfe8BAnEQxnXtxkgWCE9AiDHbZ_tplv-tej9nj120t-origin.webp');"></div>
+            <div class="product-info">
+                <h2 class="product-title">ชินจังขี่รถไฟ</h2>
+                <p class="product-price">฿1,799</p>
+                <p class="product-description">น่ารักพร้อมพาเธอไปเที่ยว</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
 ```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/c6cf4a8d-8d55-4bdf-bb22-9180e138ca64)
+
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
@@ -436,12 +567,157 @@ border: 1px solid black;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* General layout and styling for the stats container */
+        .stats-container {
+            display: flex;
+            justify-content: space-between; /* Change from space-around to space-between for better spacing */
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem; /* Increase left/right padding */
+        }
+
+        /* Styling for each individual stat box */
+        .stat-box {
+            flex: 1;
+            margin: 0 20px; /* Increase the margin between the boxes */
+            padding: 2.5rem; /* Increase padding for more space inside the box */
+            text-align: center;
+            background-color: #f9f9f9; /* Light gray background for the box */
+            border-radius: 12px; /* More rounded corners */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Enhanced shadow for depth */
+        }
+
+        /* Styling for the stat number */
+        .stat-number {
+            font-size: 3rem; /* Larger font size for better visibility */
+            font-weight: 700; /* Make the number bold */
+            color: #3498db; /* Change color to a soft blue */
+            margin-bottom: 0.8rem; /* Increase space between number and label */
+        }
+
+        /* Styling for the stat label */
+        .stat-label {
+            font-size: 1.2rem; /* Increase font size */
+            color: #555; /* Darker gray for the label text */
+            text-transform: uppercase;
+            letter-spacing: 1.5px; /* Increase letter spacing */
+            font-weight: 600; /* Make the label bold */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .stats-container {
+                flex-direction: column; /* Stack boxes vertically on smaller screens */
+                align-items: center; /* Center items when stacked */
+            }
+
+            .stat-box {
+                margin: 1rem 0; /* Add vertical spacing between the boxes when stacked */
+                padding: 2rem; /* Adjust padding for smaller screens */
+                max-width: 400px; /* Limit max width for better readability */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stats-container">
+        <div class="stat-box">
+            <div class="stat-number">1,234</div>
+            <div class="stat-label">ผู้ใช้งาน</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">5.6K</div>
+            <div class="stat-label">ยอดขาย</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">ความพึงพอใจ</div>
+        </div>
+    </div>
+</body>
+</html>
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* General layout and styling for the stats container */
+        .stats-container {
+            display: flex;
+            justify-content: space-between; /* Change from space-around to space-between for better spacing */
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem; /* Increase left/right padding */
+        }
+
+        /* Styling for each individual stat box */
+        .stat-box {
+            flex: 1;
+            margin: 0 20px; /* Increase the margin between the boxes */
+            padding: 2.5rem; /* Increase padding for more space inside the box */
+            text-align: center;
+            background-color: #f9f9f9; /* Light gray background for the box */
+            border-radius: 12px; /* More rounded corners */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Enhanced shadow for depth */
+        }
+
+        /* Styling for the stat number */
+        .stat-number {
+            font-size: 3rem; /* Larger font size for better visibility */
+            font-weight: 700; /* Make the number bold */
+            color: #3498db; /* Change color to a soft blue */
+            margin-bottom: 0.8rem; /* Increase space between number and label */
+        }
+
+        /* Styling for the stat label */
+        .stat-label {
+            font-size: 1.2rem; /* Increase font size */
+            color: #555; /* Darker gray for the label text */
+            text-transform: uppercase;
+            letter-spacing: 1.5px; /* Increase letter spacing */
+            font-weight: 600; /* Make the label bold */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .stats-container {
+                flex-direction: column; /* Stack boxes vertically on smaller screens */
+                align-items: center; /* Center items when stacked */
+            }
+
+            .stat-box {
+                margin: 1rem 0; /* Add vertical spacing between the boxes when stacked */
+                padding: 2rem; /* Adjust padding for smaller screens */
+                max-width: 400px; /* Limit max width for better readability */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stats-container">
+        <div class="stat-box">
+            <div class="stat-number">1,234</div>
+            <div class="stat-label">ผู้ใช้งาน</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">5.6K</div>
+            <div class="stat-label">ยอดขาย</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">ความพึงพอใจ</div>
+        </div>
+    </div>
+</body>
+</html>
 ```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/2bf3f865-b2c6-431b-8037-f37c8b946532)
+
 
 [](#การทดลองที่-5-การจัดการข้อความและฟอนต์)
 ## การทดลองที่ 5: การจัดการข้อความและฟอนต์

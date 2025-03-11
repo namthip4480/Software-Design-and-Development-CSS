@@ -830,12 +830,125 @@ font-weight: bold;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิธีการเขียนบทความที่น่าสนใจ</title>
+    <!-- เชื่อมโยงไฟล์ CSS ภายนอก -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <article class="blog-post">
+        <header class="post-header">
+            <h1 class="post-title">วิธีการเขียนบทความที่น่าสนใจ</h1>
+            <div class="post-meta">โพสต์เมื่อ 1 มกราคม 2025 | โดย ผู้เขียน</div>
+        </header>
+        
+        <div class="post-content">
+            <p>เนื้อหาบทความที่ดีควรมีความน่าสนใจและเป็นประโยชน์ต่อผู้อ่าน การเขียนบทความให้น่าอ่านนั้นมีหลักการสำคัญหลายประการ</p>
+
+            <h2>1. การเลือกหัวข้อที่น่าสนใจ</h2>
+            <p>หัวข้อที่ดีควรตรงกับความสนใจของกลุ่มเป้าหมาย และมีประโยชน์ต่อผู้อ่าน</p>
+
+            <blockquote>
+                "การเขียนที่ดีไม่ได้เกิดจากพรสวรรค์เพียงอย่างเดียว แต่เกิดจากการฝึกฝนอย่างสม่ำเสมอ"
+            </blockquote>
+
+            <h2>2. การจัดโครงสร้างเนื้อหา</h2>
+            <p>เนื้อหาที่ดีควรมีการจัดลำดับที่เป็นระบบ เข้าใจง่าย และมีความต่อเนื่อง</p>
+        </div>
+    </article>
+</body>
+</html>
+
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+/* General styling for the blog post container */
+.blog-post {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: 'Sarabun', sans-serif;
+    background-color: #f9f9f9; /* Light background for the entire article */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a subtle 3D effect */
+}
+
+/* Styling for the post header */
+.post-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Title of the post */
+.post-title {
+    font-size: 3rem; /* Increased size for title */
+    color: #333; /* Dark gray for text */
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    font-weight: 700; /* Bold for emphasis */
+}
+
+/* Metadata below the title */
+.post-meta {
+    color: #666; /* Lighter gray for metadata */
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Styling for the main content of the post */
+.post-content {
+    font-size: 1.1rem; /* Slightly larger font for content */
+    line-height: 1.8; /* Increased line height for better readability */
+    color: #444; /* Dark gray for text to improve legibility */
+}
+
+/* Styling for paragraphs within the content */
+.post-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* Styling for subheadings (h2) */
+.post-content h2 {
+    font-size: 2rem; /* Larger size for subheadings */
+    color: #333; /* Dark color to match the main title */
+    margin: 2rem 0 1rem;
+}
+
+/* Styling for blockquotes */
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #007bff; /* Blue color for the border */
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    color: #555; /* Gray text for the quote */
+    background-color: #f1faff; /* Very light blue background */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .post-title {
+        font-size: 2.5rem; /* Adjust the title size on smaller screens */
+    }
+
+    .post-meta {
+        font-size: 0.8rem; /* Smaller font size for metadata on smaller screens */
+    }
+
+    .post-content {
+        font-size: 1rem; /* Adjust content font size for smaller screens */
+    }
+
+    .post-content h2 {
+        font-size: 1.6rem; /* Smaller subheading font for mobile devices */
+    }
+}
+
 ```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/8a759dd2-ec3a-45ad-ac66-71aebbc06352)
 
 [](#การทดลองที่-6-Layout-และการจัดวางอิลิเมนต์)
 ## การทดลองที่ 6: Layout และการจัดวางอิลิเมนต์
@@ -977,12 +1090,143 @@ font-weight: bold;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สินค้า</title>
+    <!-- เชื่อมโยงไฟล์ CSS ภายนอก -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="product-grid">
+        <!-- สินค้าชิ้นที่ 1 -->
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/products/1650802901790.png')"></div>
+            <div class="product-details">
+                <h3 class="product-title">โออิชิ</h3>
+                <div class="product-price">฿75</div>
+                <div class="product-action">
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- สินค้าชิ้นที่ 2 -->
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/น้ำผึ้ง-100-iti-รวม-1.jpg')"></div>
+            <div class="product-details">
+                <h3 class="product-title">น้ำผึ้ง</h3>
+                <div class="product-price">฿150</div>
+                <div class="product-action">
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- เพิ่มสินค้าอื่นๆ ตามต้องการ -->
+    </div>
+</body>
+</html>
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+/* กำหนดรูปแบบการจัดเรียงสินค้าใน grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* ปรับขนาดของสินค้า */
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* กำหนดรูปแบบของสินค้าแต่ละชิ้น */
+.product-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+/* เอฟเฟกต์เมื่อผู้ใช้ hover บนการ์ดสินค้า */
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* กำหนดขนาดรูปภาพสินค้า */
+.product-image {
+    width: 100%;
+    height: 180px; /* ขนาดเล็กลงเพื่อให้สินค้าสามารถแสดงได้หลายชิ้นในแถว */
+    background-color: #f5f5f5;
+    background-size: cover;
+    background-position: center;
+}
+
+/* รายละเอียดของสินค้าภายในการ์ด */
+.product-details {
+    padding: 15px;
+}
+
+/* ชื่อสินค้า */
+.product-title {
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+/* ราคา */
+.product-price {
+    font-size: 1.2rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* การจัดการปุ่มและการกระทำในการ์ด */
+.product-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* ปุ่มเพิ่มลงตะกร้า */
+.add-to-cart {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* เปลี่ยนสีของปุ่มเมื่อ hover */
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+/* การตอบสนองบนมือถือ */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* ปรับให้เล็กลงเมื่อหน้าจอเล็ก */
+    }
+
+    .product-image {
+        height: 150px; /* ลดขนาดภาพลงเพื่อให้ดูดีบนมือถือ */
+    }
+
+    .product-title {
+        font-size: 1rem; /* ลดขนาดตัวอักษรสำหรับมือถือ */
+    }
+
+    .product-price {
+        font-size: 1rem; /* ลดขนาดตัวอักษรสำหรับมือถือ */
+    }
+}
 ```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/b3ea19e2-744d-4866-b261-1a65c7b03396)
+
 
 
 ### ตัวอย่างการใช้งาน: การสร้างเลย์เอาต์ Modern Dashboard
@@ -1130,10 +1374,201 @@ font-weight: bold;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แดชบอร์ด</title>
+    <!-- เชื่อมโยงไฟล์ CSS ภายนอก -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <h1>แดชบอร์ด</h1>
+            <nav>
+                <button>โปรไฟล์</button>
+                <button>ออกจากระบบ</button>
+            </nav>
+        </header>
+
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">หน้าแรก</a></li>
+                    <li><a href="#">รายงาน</a></li>
+                    <li><a href="#">การตั้งค่า</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>ยอดขายรวม</h3>
+                    <p>฿150,000</p>
+                </div>
+                <div class="stat-card">
+                    <h3>จำนวนออเดอร์</h3>
+                    <p>1,234</p>
+                </div>
+                <div class="stat-card">
+                    <h3>ลูกค้าใหม่</h3>
+                    <p>45</p>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart">
+                    <h3>กราฟแสดงยอดขาย</h3>
+                    <!-- เพิ่มกราฟตามต้องการ -->
+                </div>
+                <div class="chart">
+                    <h3>สัดส่วนสินค้าขายดี</h3>
+                    <!-- เพิ่มกราฟตามต้องการ -->
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+/* กำหนดโครงสร้างของแดชบอร์ด */
+.dashboard {
+    display: grid;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar main";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+    background-color: #ecf0f1;
+}
+
+/* Header ส่วนบน */
+.header {
+    grid-area: header;
+    background: #34495e;
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+}
+
+/* เมนูข้างๆ */
+.sidebar {
+    grid-area: sidebar;
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 1rem;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    color: #3498db;
+}
+
+/* ส่วนเนื้อหาหลัก */
+.main-content {
+    grid-area: main;
+    padding: 1.5rem;
+    background: #f5f7fa;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.stat-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* กราฟ */
+.chart-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.chart {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ปรับการแสดงผลบนมือถือ */
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-areas: 
+            "header"
+            "main";
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .chart-container {
+        grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .stat-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .stat-card p {
+        font-size: 1.3rem;
+    }
+}
+
 ```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/84c04f87-47d9-4a46-92e7-27e32edfbe29)
+
 
